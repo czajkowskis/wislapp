@@ -1,0 +1,29 @@
+{
+  "words": [
+    {
+      "english": "Apple",
+      "polish": "Jabłko",
+      "audio_src": "./placeholder"
+    },
+    {
+      "english": "Book",
+      "polish": "Książka",
+      "audio_src": "./placeholder"
+    },
+    {
+      "english": "House",
+      "polish": "Dom",
+      "audio_src": "./placeholder"
+    },
+    {
+      "english": "Car",
+      "polish": "Samochód",
+      "audio_src": "./placeholder"
+    },
+    {
+      "english": "Friend",
+      "polish": "Przyjaciel",
+      "audio_src": "./placeholder"
+    }
+  ]
+}

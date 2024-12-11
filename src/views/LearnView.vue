@@ -4,6 +4,7 @@
     data() {
       return {
         words: [],
+        quizName: "",
         current_index: 0
       };
     },
@@ -26,6 +27,7 @@
           const response = await fetch('/data/nouns.json');
           const data = await response.json();
           this.words = data.words;
+          this.quizName = data.quiz_name;
         } catch (error) {
           console.error("Error loading JSON:", error);
         }
@@ -38,19 +40,19 @@
       },
 
       goToQuiz() {
-        this.$router.push({ name: "Quiz" });
+      this.$router.push({ name: 'Quiz', params: { quizName: this.quizName } });
       }
     },
 
     mounted() {
       this.fetchWords();
-      console.log(this.currentWord)
     }
   }
 </script>
 
 <template>
   <div>
+    <span>{{this.current_index + 1}} / {{this.words.length}}</span>
     <h1>{{ currentWord.polish }}</h1>
     <h2>{{ currentWord.english }}</h2>
 

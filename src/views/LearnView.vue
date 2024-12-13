@@ -1,6 +1,9 @@
 <script>
-  
+  import ProgressBar from '../components/ProgressBar.vue'; // Import the progress bar component
   export default {
+    components: {
+      ProgressBar,
+    },
     data() {
       return {
         words: [],
@@ -24,10 +27,12 @@
     methods: {
       async fetchWords() {
         try {
-          const response = await fetch('/data/nouns.json');
+          const dataPath = '/data/' + this.$route.params.lessonName + ".json"
+          const response = await fetch(dataPath);
           const data = await response.json();
           this.words = data.words;
           this.quizName = data.quiz_name;
+          console.log(this.quizName)
         } catch (error) {
           console.error("Error loading JSON:", error);
         }
@@ -51,8 +56,8 @@
 </script>
 
 <template>
-  <div>
-    <span>{{this.current_index + 1}} / {{this.words.length}}</span>
+  <div class="container">
+    <progress-bar :currentStep="this.current_index" :totalSteps="this.words.length" />
     <h1>{{ currentWord.polish }}</h1>
     <h2>{{ currentWord.english }}</h2>
 
@@ -62,8 +67,14 @@
 </template>
 
 <style scoped>
+  .container {
+    margin: 0 auto;
+    max-width: 60%;
+  }
+
   h1 {
     color: #CDD6F4 ;
+    margin: 30px auto;
     font-size: 64px;
     font-weight: 700;
   }

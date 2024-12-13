@@ -1,16 +1,29 @@
 <script>
+import ProgressBar from '../components/ProgressBar.vue'; // Import the progress bar component
+import QuizSummary from '../components/QuizSummary.vue'
 export default {
+  components: {
+    ProgressBar,
+    QuizSummary,
+  },
   data() {
     return {
       questions: [],
       incorrectQueue: [], // Queue of incorrect questions
+      attemptedQuestions: new Set(), // Track questions already attempted
       choices: [],
       selectedChoice: null,
-      incorrectAnswers: [],
+      incorrectAnswers: [],      
+      attemptedQuestions: new Set(), // Track questions already attempted
+      firstTimeCorrectAnswers: 0,
+      correctAnswersNumber: 0,
       currentIndex: 0,
       currentQuestion: {},
       correctAudio: new Audio("/audio/correct.mp3"), // Path to correct answer sound
       incorrectAudio: new Audio("/audio/incorrect.mp3"), // Path to incorrect answer sound
+      startTime: null,
+      timeTaken: null,
+      showSummary: false, // Controls whether the summary modal is displayed
     };
   },
 
@@ -18,7 +31,7 @@ export default {
     async fetchQuestions() {
       try {
         const questionsPath = '/data/' + this.$route.params.quizName + ".json"
-        console.log(questionsPath);
+        console.log(questionsPath)
         const response = await fetch(questionsPath);
         const data = await response.json();
         this.questions = data.questions;
@@ -48,18 +61,33 @@ export default {
     checkAnswer(userAnswer) {
       this.selectedChoice = userAnswer;
       if (userAnswer === this.currentQuestion.polish) {
-        this.correctAudio.play();
-        setTimeout(this.nextQuestion, 1500);
+        this.handleCorrectAnswer();
       } else {
+        this.handleIncorrectAnswer(userAnswer);
+      }
+      this.attemptedQuestions.add(this.currentQuestion)
+    },
+    
+    handleCorrectAnswer() { 
+      if(!this.incorrectQueue.includes(this.currentQuestion)){
+        this.correctAnswersNumber++; //Increment number of correct answers if the user answered correctly without hints
+      }
+      if(!this.attemptedQuestions.has(this.currentQuestion)){
+        this.firstTimeCorrectAnswers++;
+      }
+      this.correctAudio.play();
+      setTimeout(this.nextQuestion, 1500);
+    },
+
+    handleIncorrectAnswer(userAnswer) {
         this.incorrectAudio.play();
         if (!this.incorrectQueue.includes(this.currentQuestion)) {
           // Make sure that questions in incorrect queue are unique
           this.incorrectQueue.push(this.currentQuestion);
         }
         this.incorrectAnswers.push(userAnswer);
-      }
     },
-    
+
     nextQuestion() {
       // Check if there are more questions in the main queue
       if (this.currentIndex < this.questions.length - 1) {
@@ -72,7 +100,9 @@ export default {
       } 
       // End the quiz if no questions remain
       else {
-        this.currentQuestion = null;
+        this.timeTaken = Math.floor((new Date() - this.startTime) / 1000); // Calculate time taken in seconds
+        this.showSummary = true;
+        return
       }
       this.generateChoices();
       this.selectedChoice = null;
@@ -91,24 +121,32 @@ export default {
       }
       return "";
     },
+    goToHome() {
+      this.$router.push({ name: 'Home'});
+    }
   },
   mounted() {
+    this.startTime = new Date();
     this.fetchQuestions();
   }
 };
 </script>
 
 <template>
-  <div>
+  <div class="container">
+    <progress-bar :currentStep="this.correctAnswersNumber" :totalSteps="this.questions.length"/>
     <img :src="this.currentQuestion.photo_src"/>
     <h2>{{this.currentQuestion.english}}</h2>
     <button v-for="(choice, index) in choices" :key="index" :class="getButtonClass(choice)" @click="checkAnswer(choice)"> {{ choice }}</button>
+    <quiz-summary v-if="showSummary" :correctAnswers="firstTimeCorrectAnswers" :totalQuestions="this.questions.length" :timeTaken="timeTaken" @close="goToHome"/>
   </div>
-  <RouterLink :to="{name: 'Learn'}">Learn</RouterLink>
-
 </template>
 
 <style scoped>
+  .container {
+    max-width: 80%;
+    margin: 0 auto;
+  }
   h2 {
     font-size: 30px;
     color: #BAC2DE;

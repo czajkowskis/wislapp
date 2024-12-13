@@ -1,0 +1,12 @@
+{
+  "lessons": [
+    {
+      "title": "1. Basic nouns",
+      "name": "nouns"
+    }, 
+    {
+      "title": "2. Basic verbs",
+      "name": "verbs"
+    }
+  ]
+}

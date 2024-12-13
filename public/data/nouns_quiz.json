@@ -1,30 +1,35 @@
 {
-  "words": [
+  "questions": [
     {
       "english": "Apple",
       "polish": "Jabłko",
+      "photo_src": "/images/apple.jpg",
       "audio_src": "./placeholder"
     },
     {
       "english": "Book",
       "polish": "Książka",
+      "photo_src": "/images/book.jpg",
       "audio_src": "./placeholder"
     },
     {
       "english": "House",
       "polish": "Dom",
+      "photo_src": "/images/house.jpg",
       "audio_src": "./placeholder"
     },
     {
       "english": "Car",
       "polish": "Samochód",
+      "photo_src": "/images/car.jpg",
       "audio_src": "./placeholder"
     },
     {
       "english": "Friend",
       "polish": "Przyjaciel",
+      "photo_src": "/images/friend.jpg",
       "audio_src": "./placeholder"
+    
     }
-  ],
-  "quiz_name": "nouns_quiz"
+  ]
 }

@@ -8,6 +8,7 @@ export default {
   },
   data() {
     return {
+      lessonName: "",
       questions: [],
       incorrectQueue: [], // Queue of incorrect questions
       attemptedQuestions: new Set(), // Track questions already attempted
@@ -34,6 +35,7 @@ export default {
         console.log(questionsPath)
         const response = await fetch(questionsPath);
         const data = await response.json();
+        this.lessonName = data.lesson_name;
         this.questions = data.questions;
         this.currentQuestion = this.questions[this.currentIndex]
         this.generateChoices();
@@ -121,8 +123,13 @@ export default {
       }
       return "";
     },
+
     goToHome() {
       this.$router.push({ name: 'Home'});
+    },
+
+    retakeLesson() {
+      this.$router.push({ name: 'Learn', params: { lessonName: this.lessonName } });
     }
   },
   mounted() {
@@ -138,7 +145,12 @@ export default {
     <img :src="this.currentQuestion.photo_src"/>
     <h2>{{this.currentQuestion.english}}</h2>
     <button v-for="(choice, index) in choices" :key="index" :class="getButtonClass(choice)" @click="checkAnswer(choice)"> {{ choice }}</button>
-    <quiz-summary v-if="showSummary" :correctAnswers="firstTimeCorrectAnswers" :totalQuestions="this.questions.length" :timeTaken="timeTaken" @close="goToHome"/>
+    <quiz-summary v-if="showSummary" 
+      :correctAnswers="firstTimeCorrectAnswers" 
+      :totalQuestions="this.questions.length" 
+      :timeTaken="timeTaken" 
+      @close="goToHome"
+      @retake="retakeLesson"/>
   </div>
 </template>
 

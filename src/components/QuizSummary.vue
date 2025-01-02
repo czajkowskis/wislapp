@@ -2,9 +2,17 @@
   <div class="modal-overlay">
     <div class="modal-content animated-modal">
       <h1>Quiz Summary</h1>
+      <h2 v-if="isPassed">Great Job! Continue with other lessons now!</h2>
+      <h2 v-else> You didn't do that great, maybe retake the lesson?</h2>
       <h2><strong>Correct Answers:</strong> {{ correctAnswers }} / {{ totalQuestions }}</h2>
       <h2><strong>Time Taken:</strong> {{ formattedTime }}</h2>
-      <button @click="$emit('close')">Finish</button>
+      <div v-if="!isPassed" class="button-container-not-passed">
+        <button @click="$emit('retake')" class="retake-button">Retake the lesson</button>
+        <button @click="$emit('close')" class="secondary-button">Finish</button>
+      </div>
+      <div v-else class="button-container-passed">
+        <button @click="$emit('close')" class="finish-button">Finish</button>
+      </div>
     </div>
   </div>
 </template>
@@ -31,6 +39,13 @@ export default {
       const seconds = this.timeTaken % 60;
       return `${minutes}m ${seconds}s`;
     },
+
+    isPassed() {
+      if (this.correctAnswers / this.totalQuestions < 0.5){
+        return false;
+      }
+      return true
+    }
   },
 };
 </script>
@@ -53,6 +68,11 @@ export default {
 /* Modal content */
 .modal-content {
   background: #5B6078;
+  min-width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
   padding: 20px 50px;
   border-radius: 8px;
   text-align: center;
@@ -62,7 +82,7 @@ export default {
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 36px;
 }
 
 h2 {
@@ -73,15 +93,60 @@ h2 {
 h2 strong {
   font-weight: 700;
 }
-/* Button styles */
+
+.button-container-not-passed {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
 button {
+  font-size: 18px;
+  margin: 0 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.finish-button {
   margin-top: 20px;
   padding: 10px 20px;
   background: #A6DA95;
-  color: #5B6078;
+  color: #000;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.finish-button:hover {
+  background: #8FCB7C;
+}
+
+.retake-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #f5a97f;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.retake-button:hover {
+  background: #e98a65;
+}
+
+.secondary-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #f4dbd6;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.secondary-button:hover{
+  background: #eac4be;
 }
 
 

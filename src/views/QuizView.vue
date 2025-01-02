@@ -147,19 +147,20 @@ export default {
     max-width: 80%;
     margin: 0 auto;
   }
+
   h2 {
-    font-size: 30px;
+    font-size: 24px;
     color: #BAC2DE;
   }
 
   img {
-    max-width: 600px;
+    max-width: 500px;
   }
 
   button {
     background: #24273A;
     color: #CDD6F4;
-    font-size: 36px;
+    font-size: 28px;
     font-weight: 700;
     display: inline-block;
     padding: 20px 50px;

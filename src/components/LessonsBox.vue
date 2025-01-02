@@ -47,10 +47,11 @@
     justify-items: center;
     background-color: #5B6078;
     border-radius: 30px;
+    max-height: 70vh;
   }
   
   h1 {
-    font-size: 48px;
+    font-size: 36px;
   }
 
   .lessons-container {
@@ -76,6 +77,10 @@
     cursor: pointer;
     background-color: #A6E3A1; 
     color: #24273A;
+  }
+
+  h2 {
+    font-size: 32px;
   }
 
   button {

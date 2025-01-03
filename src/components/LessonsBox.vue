@@ -42,6 +42,8 @@
 
 <style scoped>
   .container {
+    width:80%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -61,14 +63,13 @@
   }
 
   .lesson-container {
-    text-align: left;
-    width: 80%;
+    text-align: center;
+    width: 60%;
     margin: 30px auto;
-    padding: 20px 50px;
+    padding: 10px 20px;
     border-radius: 30px;
     background-color: #939AB7;
     color: #ffffff;
-    font-size: 24px;
     font-weight: 700;
     transition: all ease-in-out 0.3s;
   }
@@ -80,7 +81,7 @@
   }
 
   h2 {
-    font-size: 32px;
+    font-size: 28px;
   }
 
   button {

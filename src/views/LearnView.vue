@@ -75,7 +75,14 @@
 </template>
 
 <style scoped>
+
   .container {
+    min-width: 60%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
     max-width: 60%;
   }

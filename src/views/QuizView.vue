@@ -144,7 +144,9 @@ export default {
     <progress-bar :currentStep="this.correctAnswersNumber" :totalSteps="this.questions.length"/>
     <img :src="this.currentQuestion.photo_src"/>
     <h2>{{this.currentQuestion.english}}</h2>
-    <button v-for="(choice, index) in choices" :key="index" :class="getButtonClass(choice)" @click="checkAnswer(choice)"> {{ choice }}</button>
+    <div class="button-container">
+      <button v-for="(choice, index) in choices" :key="index" :class="getButtonClass(choice)" @click="checkAnswer(choice)"> {{ choice }}</button>
+    </div>
     <quiz-summary v-if="showSummary" 
       :correctAnswers="firstTimeCorrectAnswers" 
       :totalQuestions="this.questions.length" 
@@ -156,12 +158,17 @@ export default {
 
 <style scoped>
   .container {
-    max-width: 80%;
+    max-width: 60%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
   }
 
   h2 {
-    font-size: 24px;
+    font-size: 20px;
     color: #BAC2DE;
   }
 
@@ -172,10 +179,10 @@ export default {
   button {
     background: #24273A;
     color: #CDD6F4;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 700;
     display: inline-block;
-    padding: 20px 50px;
+    padding: 20px 30px;
     margin: 40px;
     min-width: 400px;
     border: 5px solid #F9E2AF;

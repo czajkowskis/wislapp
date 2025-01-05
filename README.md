@@ -4,5 +4,7 @@ It was created as part of the Intelligent Tutoring Systems course at Bielefeld U
 
 # How to build it?
 To build the app follow the instructions below:
-  $ docker build -t wislapp:latest .
-  $ docker run -it --rm -p 8080:80 wislapp:latest
+```
+$ docker build -t wislapp:latest .
+$ docker run -it --rm -p 8080:80 wislapp:latest
+```

@@ -5,6 +5,16 @@ It was created as part of the Intelligent Tutoring Systems course at Bielefeld U
 # How to use it?
 To use the app use the following commands:
 
+1. Install the dependencies
+
+
+```
+npm i
+```
+
+2. Build and run docker image
+
+
 ```
 docker build -t wislapp:latest .
 docker run -it --rm -p 8080:80 wislapp:latest

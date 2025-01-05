@@ -1,34 +1,77 @@
 {
   "questions": [
     {
+      "english": "To be",
+      "polish": "Być",
+      "photo_src": "/images/to_be.jpg",
+      "audio_src": "/audio/to_be.mp3"
+    },
+    {
+      "english": "To have",
+      "polish": "Mieć",
+      "photo_src": "/images/to_have.jpg",
+      "audio_src": "/audio/to_have.mp3"
+    },
+    {
+      "english": "To do/make",
+      "polish": "Robić",
+      "photo_src": "/images/to_do.jpg",
+      "audio_src": "/audio/to_do.mp3"
+    },
+    {
+      "english": "To speak",
+      "polish": "Mówić",
+      "photo_src": "/images/to_speak.jpg",
+      "audio_src": "/audio/to_speak.mp3"
+    },
+    {
       "english": "To walk",
       "polish": "Chodzić",
-      "photo_src": "/images/apple.jpg",
-      "audio_src": "./placeholder"
+      "photo_src": "/images/to_walk.jpg",
+      "audio_src": "/audio/to_walk.mp3"
     },
     {
       "english": "To eat",
       "polish": "Jeść",
-      "photo_src": "/images/book.jpg",
-      "audio_src": "./placeholder"
+      "photo_src": "/images/to_eat.jpg",
+      "audio_src": "/audio/to_eat.mp3"
     },
     {
       "english": "To drink",
       "polish": "Pić",
-      "photo_src": "/images/house.jpg",
-      "audio_src": "./placeholder"
+      "photo_src": "/images/to_drink.jpg",
+      "audio_src": "/audio/to_drink.mp3"
     },
     {
       "english": "To live",
       "polish": "Żyć",
-      "photo_src": "/images/car.jpg",
-      "audio_src": "./placeholder"
+      "photo_src": "/images/to_live.jpg",
+      "audio_src": "/audio/to_live.mp3"
+    },
+    {
+      "english": "To read",
+      "polish": "Czytać",
+      "photo_src": "/images/to_read.jpg",
+      "audio_src": "/audio/to_read.mp3"
+    },
+    {
+      "english": "To write",
+      "polish": "Pisać",
+      "photo_src": "/images/to_write.jpg",
+      "audio_src": "/audio/to_write.mp3"
     },
     {
       "english": "To love",
       "polish": "Kochać",
-      "photo_src": "/images/friend.jpg",
-      "audio_src": "./placeholder" 
+      "photo_src": "/images/to_love.jpg",
+      "audio_src": "/audio/to_love.mp3"
+    },
+    {
+      "english": "To sleep",
+      "polish": "Spać",
+      "photo_src": "/images/to_sleep.jpg",
+      "audio_src": "/audio/to_sleep.mp3"
     }
-  ]
+  ],
+  "lesson_name": "verbs"
 }

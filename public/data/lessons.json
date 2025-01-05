@@ -1,11 +1,15 @@
 {
   "lessons": [
     {
-      "title": "1. Basic nouns",
+      "title": "1. Greetings",
+      "name": "greetings"
+    }, 
+    {
+      "title": "2. Basic nouns",
       "name": "nouns"
     }, 
     {
-      "title": "2. Basic verbs",
+      "title": "3. Basic verbs",
       "name": "verbs"
     }
   ]

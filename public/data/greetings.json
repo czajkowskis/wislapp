@@ -1,0 +1,55 @@
+{
+  "words": [
+    {
+      "english": "Hi / Hello",
+      "polish": "Cześć",
+      "audio_src": "/audio/hello.mp3"
+    },
+    {
+      "english": "Good morning",
+      "polish": "Dzień dobry",
+      "audio_src": "/audio/good_morning.mp3"
+    },
+    {
+      "english": "Good evening",
+      "polish": "Dobry wieczór",
+      "audio_src": "/audio/good_evening.mp3"
+    },
+    {
+      "english": "Goodbye",
+      "polish": "Do widzenia",
+      "audio_src": "/audio/goodbye.mp3"
+    },
+    {
+      "english": "Good night",
+      "polish": "Dobranoc",
+      "audio_src": "/audio/good_night.mp3"
+    },
+    {
+      "english": "Bye (informal)",
+      "polish": "Pa",
+      "audio_src": "/audio/bye.mp3"
+    },
+    {
+      "english": "How are you (informal)",
+      "polish": "Jak się masz?",
+      "audio_src": "/audio/how_are_you.mp3"
+    },
+    {
+      "english": "Thank you",
+      "polish": "Dziękuję",
+      "audio_src": "/audio/thank_you.mp3"
+    },
+    {
+      "english": "Please",
+      "polish": "Proszę",
+      "audio_src": "/audio/please.mp3"
+    },
+    {
+      "english": "I/'m sorry",
+      "polish": "Przepraszam",
+      "audio_src": "/audio/sorry.mp3"
+    }
+  ],
+  "quiz_name": "greetings_quiz"
+}

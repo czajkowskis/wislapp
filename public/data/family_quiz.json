@@ -1,0 +1,53 @@
+{
+  "words": [
+    {
+      "english": "Mother",
+      "polish": "Matka",
+      "photo_src": "/images/mother.jpg",
+      "audio_src": "/audio/mother.mp3"
+    },
+    {
+      "english": "Father",
+      "polish": "Ojciec",
+      "photo_src": "/images/father.jpg",
+      "audio_src": "/audio/father.mp3"
+    },
+    {
+      "english": "Uncle",
+      "polish": "Wujek",
+      "photo_src": "/images/uncle.jpg",
+      "audio_src": "/audio/uncle.mp3"
+    },
+    {
+      "english": "Aunt",
+      "polish": "Ciocia",
+      "photo_src": "/images/aunt.jpg",
+      "audio_src": "/audio/aunt.mp3"
+    },
+    {
+      "english": "Brother",
+      "polish": "Brat",
+      "photo_src": "/images/brother.jpg",
+      "audio_src": "/audio/brother.mp3"
+    },
+    {
+      "english": "Sister",
+      "polish": "Siostra",
+      "photo_src": "/images/sister.jpg",
+      "audio_src": "/audio/sister.mp3"
+    },
+    {
+      "english": "Cousin (male)",
+      "polish": "Kuzyn",
+      "photo_src": "/images/cousin_m.jpg",
+      "audio_src": "/audio/cousin_m.mp3"
+    },
+    {
+      "english": "Cousin (female)",
+      "polish": "Kuzynka",
+      "photo_src": "/images/cousin_f.jpg",
+      "audio_src": "/audio/cousin_f.mp3"
+    }
+  ],
+  "lesson_name": "family"
+}

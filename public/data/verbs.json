@@ -1,29 +1,64 @@
 {
   "words": [
     {
+      "english": "To be",
+      "polish": "Być",
+      "audio_src": "/audio/to_be.mp3"
+    },
+    {
+      "english": "To have",
+      "polish": "Mieć",
+      "audio_src": "/audio/to_have.mp3"
+    },
+    {
+      "english": "To do/make",
+      "polish": "Robić",
+      "audio_src": "/audio/to_do.mp3"
+    },
+    {
+      "english": "To speak",
+      "polish": "Mówić",
+      "audio_src": "/audio/to_speak.mp3"
+    },
+    {
       "english": "To walk",
       "polish": "Chodzić",
-      "audio_src": "./placeholder"
+      "audio_src": "/audio/to_walk.mp3"
     },
     {
       "english": "To eat",
       "polish": "Jeść",
-      "audio_src": "./placeholder"
+      "audio_src": "/audio/to_eat.mp3"
     },
     {
       "english": "To drink",
       "polish": "Pić",
-      "audio_src": "./placeholder"
+      "audio_src": "/audio/to_drink.mp3"
     },
     {
       "english": "To live",
       "polish": "Żyć",
-      "audio_src": "./placeholder"
+      "audio_src": "/audio/to_live.mp3"
+    },
+    {
+      "english": "To read",
+      "polish": "Czytać",
+      "audio_src": "/audio/to_read.mp3"
+    },
+    {
+      "english": "To write",
+      "polish": "Pisać",
+      "audio_src": "/audio/to_write.mp3"
     },
     {
       "english": "To love",
       "polish": "Kochać",
-      "audio_src": "./placeholder"
+      "audio_src": "/audio/to_love.mp3"
+    },
+    {
+      "english": "To sleep",
+      "polish": "Spać",
+      "audio_src": "/audio/to_sleep.mp3"
     }
   ],
   "quiz_name": "verbs_quiz"

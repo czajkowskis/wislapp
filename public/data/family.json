@@ -1,0 +1,45 @@
+{
+  "words": [
+    {
+      "english": "Mother",
+      "polish": "Matka",
+      "audio_src": "/audio/mother.mp3"
+    },
+    {
+      "english": "Father",
+      "polish": "Ojciec",
+      "audio_src": "/audio/father.mp3"
+    },
+    {
+      "english": "Uncle",
+      "polish": "Wujek",
+      "audio_src": "/audio/uncle.mp3"
+    },
+    {
+      "english": "Aunt",
+      "polish": "Ciocia",
+      "audio_src": "/audio/aunt.mp3"
+    },
+    {
+      "english": "Brother",
+      "polish": "Brat",
+      "audio_src": "/audio/brother.mp3"
+    },
+    {
+      "english": "Sister",
+      "polish": "Siostra",
+      "audio_src": "/audio/sister.mp3"
+    },
+    {
+      "english": "Cousin (male)",
+      "polish": "Kuzyn",
+      "audio_src": "/audio/cousin_m.mp3"
+    },
+    {
+      "english": "Cousin (female)",
+      "polish": "Kuzynka",
+      "audio_src": "/audio/cousin_f.mp3"
+    }
+  ],
+  "quiz_name": "family_quiz"
+}

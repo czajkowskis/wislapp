@@ -36,7 +36,6 @@
     <div class="lessons-container">
       <div class="lesson-container" v-for="(lesson, index) in lessons" :key="index" @click="goToLesson(lesson.name)"><h2>{{lesson.title}}</h2></div>
     </div>
-    <button>More</button>
   </div>
 </template>
 

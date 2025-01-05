@@ -1,5 +1,8 @@
-# Vue 3 + Vite
+# Project Description
+Wislapp is a tutoring system designed to help users learn basic Polish vocabulary, implemented in Vue.js. 
+It was created as part of the Intelligent Tutoring Systems course at Bielefeld University.
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
-
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+# How to build it?
+To build the app follow the instructions below:
+  $ docker build -t wislapp:latest .
+  $ docker run -it --rm -p 8080:80 wislapp:latest

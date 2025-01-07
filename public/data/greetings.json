@@ -26,6 +26,11 @@
       "audio_src": "/audio/good_night.mp3"
     },
     {
+      "english": "Cheers",
+      "polish": "Na zdrowie",
+      "audio_src": "/audio/cheers.mp3"
+    },
+    {
       "english": "Bye (informal)",
       "polish": "Pa",
       "audio_src": "/audio/bye.mp3"

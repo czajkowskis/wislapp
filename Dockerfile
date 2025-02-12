@@ -4,6 +4,7 @@ FROM node:lts as builder
 WORKDIR /app
 COPY . .
 
+RUN npm install
 ### Build Vue.js into plain HTML/CSS/JS
 RUN npm run build-prod
 

@@ -3,52 +3,52 @@
     {
       "english": "Book",
       "polish": "Książka",
-      "audio_src": "/audio/book.mp3"
+      "audio_src": "/audio/words/nouns/book.mp3"
     },
     {
       "english": "House",
       "polish": "Dom",
-      "audio_src": "/audio/house.mp3"
+      "audio_src": "/audio/words/nouns/house.mp3"
     },
     {
       "english": "Car",
       "polish": "Samochód",
-      "audio_src": "/audio/car.mp3"
+      "audio_src": "/audio/words/nouns/car.mp3"
     },
     {
       "english": "Cat",
       "polish": "Kot",
-      "audio_src": "/audio/cat.mp3"
+      "audio_src": "/audio/words/nouns/cat.mp3"
     },
     {
       "english": "Dog",
       "polish": "Pies",
-      "audio_src": "/audio/dog.mp3"
+      "audio_src": "/audio/words/nouns/dog.mp3"
     },
     {
       "english": "Friend",
       "polish": "Przyjaciel",
-      "audio_src": "/audio/friend.mp3"
+      "audio_src": "/audio/words/nouns/friend.mp3"
     },
     {
       "english": "School",
       "polish": "Szkoła",
-      "audio_src": "/audio/school.mp3"
+      "audio_src": "/audio/words/nouns/school.mp3"
     },
     {
       "english": "Street",
       "polish": "Ulica",
-      "audio_src": "/audio/street.mp3"
+      "audio_src": "/audio/words/nouns/street.mp3"
     },
     {
       "english": "Phone",
       "polish": "Telefon",
-      "audio_src": "/audio/phone.mp3"
+      "audio_src": "/audio/words/nouns/phone.mp3"
     },
     {
       "english": "Shop",
       "polish": "Sklep",
-      "audio_src": "/audio/shop.mp3"
+      "audio_src": "/audio/words/nouns/shop.mp3"
     }
   ],
   "quiz_name": "nouns_quiz"

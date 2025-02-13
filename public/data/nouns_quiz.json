@@ -3,62 +3,52 @@
     {
       "english": "Book",
       "polish": "Książka",
-      "photo_src": "/images/book.jpg",
-      "audio_src": "/audio/book.mp3"
+      "photo_src": "/images/book.jpg"
     },
     {
       "english": "House",
       "polish": "Dom",
-      "photo_src": "/images/house.jpg",
-      "audio_src": "/audio/house.mp3"
+      "photo_src": "/images/house.jpg"
     },
     {
       "english": "Car",
       "polish": "Samochód",
-      "photo_src": "/images/car.jpg",
-      "audio_src": "/audio/car.mp3"
+      "photo_src": "/images/car.jpg"
     },
     {
       "english": "Cat",
       "polish": "Kot",
-      "photo_src": "/images/cat.jpg",
-      "audio_src": "/audio/cat.mp3"
+      "photo_src": "/images/cat.jpg"
     },
     {
       "english": "Dog",
       "polish": "Pies",
-      "photo_src": "/images/dog.jpg",
-      "audio_src": "/audio/dog.mp3"
+      "photo_src": "/images/dog.jpg"
     },
     {
       "english": "Friend",
       "polish": "Przyjaciel",
-      "photo_src": "/images/friend.jpg",
-      "audio_src": "/audio/friend.mp3"
+      "photo_src": "/images/friend.jpg"
     },
     {
       "english": "School",
       "polish": "Szkoła",
-      "photo_src": "/images/school.jpg",
-      "audio_src": "/audio/school.mp3"
+      "photo_src": "/images/school.jpg"
     },
     {
       "english": "Street",
       "polish": "Ulica",
-      "photo_src": "/images/street.jpg",
-      "audio_src": "/audio/street.mp3"
+      "photo_src": "/images/street.jpg"
     },
     {
       "english": "Shop",
       "polish": "Sklep",
-      "photo_src": "/images/shop.jpg",
-      "audio_src": "/audio/shop.mp3"
+      "photo_src": "/images/shop.jpg"
     },
     {
       "english": "Phone",
       "polish": "Telefon",
       "photo_src": "/images/phone.jpg",
-      "audio_src": "/audio/phone.mp3"
     }
   ],
   "lesson_name": "nouns"

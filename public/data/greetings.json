@@ -11,11 +11,6 @@
       "audio_src": "/audio/words/greetings/good_morning.mp3"
     },
     {
-      "english": "Good evening",
-      "polish": "Dobry wieczór",
-      "audio_src": "/audio/words/greetings/good_evening.mp3"
-    },
-    {
       "english": "Goodbye",
       "polish": "Do widzenia",
       "audio_src": "/audio/words/greetings/goodbye.mp3"

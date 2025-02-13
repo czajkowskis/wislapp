@@ -13,3 +13,4 @@ FROM nginx:stable
 
 ### Copy the app from the biolder image
 COPY --from=builder /app/dist /usr/share/nginx/html
+COPY ./nginx/default.conf /etc/nginx/conf.d/default.conf

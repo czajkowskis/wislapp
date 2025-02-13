@@ -3,27 +3,27 @@
     {
       "english": "Hi / Hello",
       "polish": "Cześć",
-      "photo_src": "/images/hello.jpg",
+      "photo_src": "/images/hello.jpg"
     },
     {
       "english": "Good morning",
       "polish": "Dzień dobry",
-      "photo_src": "/images/good_morning.jpg",
+      "photo_src": "/images/good_morning.jpg"
     },
     {
       "english": "Goodbye",
       "polish": "Do widzenia",
-      "photo_src": "/images/goodbye.jpg",
+      "photo_src": "/images/goodbye.jpg"
     },
     {
       "english": "Good night",
       "polish": "Dobranoc",
-      "photo_src": "/images/good_night.jpg",
+      "photo_src": "/images/good_night.jpg"
     },
     {
       "english": "Cheers",
       "polish": "Na zdrowie",
-      "photo_src": "/images/cheers.jpg",
+      "photo_src": "/images/cheers.jpg"
     },
     {
       "english": "Bye (informal)",
@@ -48,7 +48,7 @@
     {
       "english": "I'm sorry",
       "polish": "Przepraszam",
-      "photo_src": "/images/sorry.jpg",
+      "photo_src": "/images/sorry.jpg"
     }
   ],
   "lesson_name": "greetings"

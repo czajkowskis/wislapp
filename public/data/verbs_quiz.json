@@ -53,12 +53,12 @@
     {
       "english": "To love",
       "polish": "Kochać",
-      "photo_src": "/images/to_love.jpg",
+      "photo_src": "/images/to_love.jpg"
     },
     {
       "english": "To sleep",
       "polish": "Spać",
-      "photo_src": "/images/to_sleep.jpg",
+      "photo_src": "/images/to_sleep.jpg"
     }
   ],
   "lesson_name": "verbs"
